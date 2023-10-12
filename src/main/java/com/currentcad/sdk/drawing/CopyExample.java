@@ -16,6 +16,7 @@ public class CopyExample {
         ReqCopyDrawingInfo drawing = new ReqCopyDrawingInfo();
         drawing.setIsTemplate(false);
         //账号
+        //加密后的账号
         drawing.setOwner("yangsenxiang@currentcad.com");
         //文件名
         drawing.setName("ysx1_Copy");
