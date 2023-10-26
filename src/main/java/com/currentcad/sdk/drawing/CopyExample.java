@@ -13,6 +13,9 @@ public class CopyExample {
         //由公司颁发的账号密码
         sdk.setUsername("xxxxxxxxx");
         sdk.setPassword("xxxxxx");
+        /**
+         * 根据图纸复制
+         */
         ReqCopyDrawingInfo drawing = new ReqCopyDrawingInfo();
         drawing.setIsTemplate(false);
         //账号
@@ -28,6 +31,11 @@ public class CopyExample {
         drawing.setDrawingId("3:09fac82f6f8c4aedb3c760fd089585b4");
 
         Drawing copyDrawing = sdk.copyDrawing(drawing);
+
+        /**
+         * 根据图纸id复制
+         */
+//        Drawing copyDrawingById = sdk.copyDrawingById("被复制的图纸id");
         System.out.println(copyDrawing);
     }
 }
