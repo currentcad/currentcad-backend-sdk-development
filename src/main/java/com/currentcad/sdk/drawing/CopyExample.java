@@ -35,7 +35,10 @@ public class CopyExample {
         /**
          * 根据图纸id复制
          */
-//        Drawing copyDrawingById = sdk.copyDrawingById("被复制的图纸id");
-        System.out.println(copyDrawing);
+        // Drawing copyDrawingById = sdk.copyDrawingById("被复制的图纸id");
+        /**
+         * Copy 图纸，自定义文件名称
+         */
+        // Drawing drawing = sdk.copyDrawing("图纸ID", "自定义图纸名称")
     }
 }
