@@ -1,6 +1,8 @@
 package com.currentcad.sdk.export;
 
-import com.current.tps.sdk.sdk.SDK;
+
+
+import com.current.servicemanager.sdk.service.SDKService;
 
 import java.io.File;
 
@@ -9,10 +11,8 @@ import java.io.File;
  */
 public class ExportFile {
     public static void main(String[] args) {
-        SDK sdk = new SDK();
         //由公司颁发的账号密码
-//        sdk.setUsername("yangsenxiang@currentcad.com");
-//        sdk.setPassword("aA123456");
+        SDKService sdk = new SDKService("xxxxxxxxxx", "xxxxxx");
         //请求参数为图纸id， 导出图纸存放的父级目录：C:\\file
         //导出dwg
         File dwg = sdk.exportDwg("3:8312a695f12c4d989192d7793f2b741e", "D:\\file-test");

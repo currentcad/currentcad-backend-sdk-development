@@ -1,18 +1,16 @@
 package com.currentcad.sdk.drawing;
 
-import com.current.tps.sdk.entity.Drawing;
-import com.current.tps.sdk.entity.ReqCopyDrawingInfo;
-import com.current.tps.sdk.sdk.SDK;
+import com.current.servicemanager.sdk.entity.Drawing;
+import com.current.servicemanager.sdk.entity.ReqCopyDrawingInfo;
+import com.current.servicemanager.sdk.service.SDKService;
 
 /**
  * 图纸复制测试
  */
 public class CopyExample {
     public static void main(String[] args) {
-        SDK sdk = new SDK();
         //由公司颁发的账号密码
-        sdk.setUsername("xxxxxxxxx");
-        sdk.setPassword("xxxxxx");
+        SDKService sdk = new SDKService("xxxxxxxxxx", "xxxxxx");
         /**
          * 根据图纸复制
          */
