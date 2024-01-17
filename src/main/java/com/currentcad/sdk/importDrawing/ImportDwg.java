@@ -8,12 +8,14 @@ import java.io.File;
 
 /**
  * DWG图纸导入
+ * @author hp
  */
 public class ImportDwg {
     public static void main(String[] args) {
-        //由公司颁发的账号密码
-        SDKService sdk = new SDKService("xxxxxxxxxx", "xxxxxx");
-        File file = new File("C:\\Users\\hp\\Desktop\\三维图档测试文件\\dwg\\行星轮支架.dwg");
+        //由公司颁发的账号密码,需要链接的环境  如current环境 https://www.currentcad.com
+        SDKService sdk = new SDKService("xxxxxxxx", "xxxxxxx", "xxxxxx");
+        //需要导入的文件
+        File file = new File("xxxxxx");
         //dwg图纸导入
         Drawing drawing;
         drawing = sdk.importFile(file);
